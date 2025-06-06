@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - sudo yum update -y
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Build successful
+artifacts:
+  files:
+    - '**/*'
