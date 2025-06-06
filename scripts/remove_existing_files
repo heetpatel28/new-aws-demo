@@ -1,8 +1,0 @@
-#!/bin/bash
-# Remove existing index.html if it exists
-if [ -f /usr/share/nginx/html/index.html ]; then
-    sudo rm -f /usr/share/nginx/html/index.html
-fi
-
-# Copy the new index.html
-sudo cp -r * /usr/share/nginx/html/
