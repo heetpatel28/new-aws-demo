@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html
+    destination: /usr/share/nginx/html
 
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: scripts/remove_existing_files
       timeout: 300
       runas: root
