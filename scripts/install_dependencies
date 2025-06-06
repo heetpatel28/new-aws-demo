@@ -1,2 +1,9 @@
 #!/bin/bash
-sudo yum install -y nginx
+# Update the system
+sudo yum update -y
+
+# Enable the NGINX extras topic
+sudo amazon-linux-extras enable nginx1
+
+# Install NGINX
+sudo yum install nginx -y
